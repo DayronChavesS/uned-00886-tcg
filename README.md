@@ -104,7 +104,7 @@ Las estructuras y recursos relacionados con la base de datos se encuentran en:
 MTSS-Audiencias-BaseDeDatos/
 ```
 
-Puede utilizar el software 
+Recomendamos utilizar el software [DBBrowser](https://sqlitebrowser.org/) o [SQLiteStudio](http://sqlitestudio.pl/) para visualizar la base de datos.
 
 ---
 
