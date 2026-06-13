@@ -1,0 +1,216 @@
+package server;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.Socket;
+import java.util.concurrent.Callable;
+import java.util.concurrent.Future;
+import methods.Global;
+import methods.Telemetria;
+import org.apache.commons.io.IOUtils;
+
+public class ConexionServidor {
+
+    private Telemetria telemetria;
+    private String DIRECCION_SERVIDOR;
+    private int PUERTO_SERVIDOR;
+    private String laSolicitud;             //el mensaje enviado por el cliente
+    private String laRespuesta;             //la respuesta recibida desde el servidor
+    private Socket serverSocket;            //socket para conectarse al servidor
+    
+    public ConexionServidor(){
+        initVariables();
+    }
+    
+    private void initVariables(){
+        telemetria = new Telemetria();
+        DIRECCION_SERVIDOR = "0.0.0.0";
+        PUERTO_SERVIDOR = 9999;
+        laSolicitud = "";         
+        laRespuesta= ""; 
+    }
+    
+    //se crea un nuevo socket con direccion y puerto definidos
+    public Boolean conectarServidor() {
+        try{
+            serverSocket = new Socket(DIRECCION_SERVIDOR, PUERTO_SERVIDOR);
+            telemetria.logActivity("Conexion con servidor.");
+            telemetria.logActivity("DATOS LOCALES:");
+            telemetria.logActivity("IP: " + serverSocket.getLocalAddress());
+            telemetria.logActivity("PUERTO: "+ serverSocket.getLocalPort());
+            telemetria.logActivity("DATOS DEL SERVIDOR:");
+            telemetria.logActivity("IP: " + serverSocket.getInetAddress());
+            telemetria.logActivity("PUERTO: " + serverSocket.getPort());
+            return true;
+        }catch(Exception ex){
+            telemetria.logActivity("Error al establecer conexion con el servidor.");
+            telemetria.logException(ex);
+            return false;
+        } 
+    }
+
+    //se cierra los canales y sockets creados
+    public void desconectarServidor() {
+        try{
+            if (serverSocket != null){
+                serverSocket.close();
+            }
+            telemetria.logActivity("Se cerro conexion con el servidor.");
+        }catch(Exception ex){
+            telemetria.logActivity("Error al cerrar la conexion con el servidor");
+            telemetria.logException(ex);
+        }
+    }
+    
+    //se abre un canal de salida y se envian los datos
+    public void enviarMensaje(String laSolicitud) {
+        try{
+            DataOutputStream clientOutput= new DataOutputStream(serverSocket.getOutputStream());
+            clientOutput.writeBytes(laSolicitud + "\n");
+            clientOutput.flush();
+
+            /*
+                ATENCION:
+                FALLAR EN INCLUIR "\n" EN EL MENSAJE CONGELARA EL PROGRAMA.
+            */
+
+        }catch(Exception ex){
+            telemetria.logActivity("Fallo al enviar mensaje al servidor.");
+            telemetria.logException(ex);
+        }
+    }
+    
+    
+    //se abre un canal de entrada y se espera hasta recibir respuesta
+    public String recibirMensaje(){
+        String laRespuesta = "";
+        
+        try{
+            BufferedReader serverInput = new BufferedReader(new InputStreamReader(serverSocket.getInputStream())); 
+            while (true) {
+                //se deja de esperar respuesta si la conexion se cae
+                if (!serverSocket.isConnected() || serverSocket.isClosed()) {
+                    break;
+                }
+
+                //si se han obtenido datos, se lee y se rompe el ciclo
+                if(serverInput.ready()){
+                    laRespuesta = serverInput.readLine();
+                    break;
+                }
+
+            }
+        }catch(Exception ex){
+            telemetria.logActivity("Error al enviar mensaje al servidor."); 
+            telemetria.logException(ex);
+        }
+    
+        return laRespuesta;
+    }
+    
+    //se abre un canal de salida y se envian los datos
+    public void enviarArchivo(String pathOrigen){
+        try{
+            DataOutputStream dos = new DataOutputStream(serverSocket.getOutputStream());            
+            FileInputStream fis = new FileInputStream(pathOrigen);            
+            IOUtils.copy(fis, dos);
+            fis.close();
+            dos.close();
+            serverSocket.close();
+        }catch(Exception ex){
+            telemetria.logActivity("Fallo al enviar archivo al servidor.");
+            telemetria.logException(ex);
+        }
+    }
+    
+    public void recibirArchivo(String pathDestino){
+        try {
+
+            File file = new File(pathDestino);
+            if(!file.exists()){
+                file.getParentFile().mkdirs();
+                file.createNewFile();
+            }
+            DataInputStream dis = new DataInputStream(serverSocket.getInputStream());
+            FileOutputStream fos = new FileOutputStream(file);
+            IOUtils.copy(dis, fos);
+            fos.close();
+
+        } catch (Exception ex) {
+            telemetria.logActivity("Fallo al descargar archivo desde servidor.");
+            telemetria.logException(ex);
+        }
+        
+    }
+    
+    public void enviarObjeto(Object elObjeto){
+        try{
+            ObjectOutputStream oos = new ObjectOutputStream(serverSocket.getOutputStream());
+            oos.writeObject(elObjeto);
+        }catch(Exception ex){
+            telemetria.logActivity("Fallo al enviar objeto al servidor.");
+            telemetria.logException(ex);
+        }
+    }
+    
+        
+    public Object recibirObjeto() {
+        Object obj = new Object();
+        
+        try{
+            DataInputStream in = new DataInputStream(new BufferedInputStream(serverSocket.getInputStream()));
+            ObjectInputStream ois = new ObjectInputStream(in);
+            obj = ois.readObject();
+        }catch(Exception ex){
+            telemetria.logActivity("Error al leer el objeto enviado por el cliente.");
+            telemetria.logException(ex);
+            return null;
+        }
+        
+        return obj;
+    }
+}
+
+/*
+UNIVERSIDAD ESTATAL A DISTANCIA
+VICERRECTORIA ACADÉMICA 
+ESCUELA DE CIENCIAS EXACTAS Y NATURALES 
+CARRERA INGENIERÍA INFORMÁTICA 
+
+Desarrollar una aplicación de escritorio
+Para la administración de comparecencias del
+Ministerio de Trabajo y Seguridad Social de la
+Región Huetar Caribe
+
+MODALIDAD ESCOGIDA: PROYECTO
+
+PARTE PROGRAMADA
+PARA OPTAR POR EL TÍTULO DE 
+BACHILLER EN INGENIERÍA INFORMÁTICA 
+
+PROPRIETARIO:
+MOISES ROMERO PRADO
+CEDULA 303370265
+
+AUTORES:
+ROBERT JESÚS CASCANTE ARAYA,
+CÉDULA 305180118
+CORREO jesuscascantearaya@gmail.com
+TELEFONO 88943263
+DAYRON ANTONY CHAVES SANDOVAL,
+CÉDULA 305240018 
+TELEFONO 83959225
+CORREO dayron.chaves@pm.me
+
+CENTRO UNIVERSITARIO DE TURRIALBA
+PAC 2023-1
+TURRIALBA, 2023  
+*/

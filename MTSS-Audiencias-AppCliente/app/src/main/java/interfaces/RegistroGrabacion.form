@@ -1,0 +1,2325 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="0"/>
+    <Property name="title" type="java.lang.String" value="SGG | Registrar Grabacion"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+    </Property>
+    <Property name="iconImage" type="java.awt.Image" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection code="new ImageIcon(getClass().getResource(&quot;/favicon.png&quot;)).getImage()" type="code"/>
+    </Property>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowClosing" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowClosing"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Component id="labelBanner" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Component id="pnlFondo" min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="labelBanner" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="pnlFondo" alignment="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="labelBanner">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/banners/banner-registro.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JPanel" name="pnlFondo">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="contenedorTabs" alignment="0" max="-2" attributes="0"/>
+              <Component id="btnGuardar" alignment="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="contenedorTabs" min="-2" pref="606" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="btnGuardar" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JTabbedPane" name="contenedorTabs">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="tabLayoutPolicy" type="int" value="1"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="pnlGrabacion">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Grabaci&#xf3;n">
+                    <Property name="tabTitle" type="java.lang.String" value="Grabaci&#xf3;n"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="lblTituloInformativo" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="51" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="jPanel1" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblTituloInformativo" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="218" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="lblTituloInformativo">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ingrese la informaci&#xf3;n que se le solicita a continuaci&#xf3;n:"/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JPanel" name="jPanel1">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder title="Informaci&#xf3;n"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblNombreGrabacion" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelMandatory46" min="-2" pref="13" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblTipoCaso" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelMandatory47" min="-2" pref="13" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblUbicacion" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelMandatory48" min="-2" pref="13" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblSILAC" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelMandatory45" min="-2" pref="13" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblFechaComparecencia" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelMandatory49" min="-2" pref="13" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="spnFechaComparecencia" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cmbTipoCaso" alignment="0" pref="277" max="32767" attributes="0"/>
+                                  <Component id="txtNombreGrabacion" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtCodigoSILAC" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtUbicacionGrabacion" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="lblLinkExpediente" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtLinkExpediente" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblSILAC" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory45" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtCodigoSILAC" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblNombreGrabacion" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory46" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="txtNombreGrabacion" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblTipoCaso" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory47" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cmbTipoCaso" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblUbicacion" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory48" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtUbicacionGrabacion" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lblLinkExpediente" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="txtLinkExpediente" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblFechaComparecencia" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory49" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="spnFechaComparecencia" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextField" name="txtNombreGrabacion">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtNombreGrabacionKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtUbicacionGrabacion">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtUbicacionGrabacionKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="cmbTipoCaso">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="9">
+                            <StringItem index="0" value="Seleccione el tipo de caso..."/>
+                            <StringItem index="1" value="Discriminaci&#xf3;n en raz&#xf3;n de g&#xe9;nero, edad, entre otros"/>
+                            <StringItem index="2" value="Despido de Trabajador Licencia de Paternidad"/>
+                            <StringItem index="3" value="Trabajadora embarazada o estado de lactancia"/>
+                            <StringItem index="4" value="Trabajadora embarazada. Restricci&#xf3;n de derechos"/>
+                            <StringItem index="5" value="Fraccionamiento de jornada laboral"/>
+                            <StringItem index="6" value="Hostigamiento laboral"/>
+                            <StringItem index="7" value="Hostigamiento sexual"/>
+                            <StringItem index="8" value="Despido de aforado sindicato"/>
+                          </StringArray>
+                        </Property>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Cursor de Mano"/>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JFormattedTextField" name="txtCodigoSILAC">
+                      <Properties>
+                        <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                          <Format format="UU-UU-#####-##" subtype="-1" type="5"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCodigoSILACKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JSpinner" name="spnFechaComparecencia">
+                      <Properties>
+                        <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+                          <SpinnerModel initial="now" stepSize="5" type="date"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblNombreGrabacion">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Nombre de la grabaci&#xf3;n"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblTipoCaso">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tipo de caso"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblUbicacion">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ubicaci&#xf3;n"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblFechaComparecencia">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Fecha de comparecencia"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblSILAC">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="C&#xf3;digo SILAC"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory45">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory46">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory47">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory48">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory49">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblLinkExpediente">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Link de expediente"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtLinkExpediente">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtLinkExpedienteKeyPressed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="pnlGestionante">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Gestionante">
+                    <Property name="tabTitle" type="java.lang.String" value="Gestionante"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="panelDatosGestionante" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="lblCedula3" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="labelMandatory41" min="-2" pref="13" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="cmbTipoIdentificacionGestionante" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblInstrucciones2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="51" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="panelDatosGestionante1" alignment="0" max="32767" attributes="0"/>
+                              <Component id="panelSeleccionarAcompañantes" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblInstrucciones2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblCedula3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelMandatory41" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="cmbTipoIdentificacionGestionante" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="panelDatosGestionante" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="panelDatosGestionante1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="panelSeleccionarAcompañantes" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="lblInstrucciones2">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ingrese la informacion que se le solicita a continuacion:"/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JPanel" name="panelDatosGestionante">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder justification="1" position="2" title="Persona Fisica"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txtfldPrimerApellidoGestionante" min="-2" pref="107" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelSeparator5" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtfldSegundoApellidoGestionante" min="-2" pref="107" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblCedula2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelMandatory19" min="-2" pref="13" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="labelPrimerApellido2" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory21" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="txtfldPrimerNombreGestionante" min="-2" pref="107" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelSeparator4" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txtfldSegundoNombreGestionante" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                                          <Component id="labelSegundoNombre2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="labelSegundoApellido2" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory22" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="labelPrimerNombre2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelMandatory20" min="-2" pref="13" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="txtfldCedulaGestionante" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblCedula2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory19" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtfldCedulaGestionante" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelPrimerNombre2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSegundoNombre2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory20" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtfldSegundoNombreGestionante" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtfldPrimerNombreGestionante" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSeparator4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelPrimerApellido2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSegundoApellido2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory21" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory22" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                      <Component id="txtfldPrimerApellidoGestionante" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="txtfldSegundoApellidoGestionante" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelSeparator5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextField" name="txtfldPrimerNombreGestionante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtfldPrimerNombreGestionanteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtfldSegundoNombreGestionante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtfldSegundoNombreGestionanteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtfldPrimerApellidoGestionante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtfldPrimerApellidoGestionanteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtfldSegundoApellidoGestionante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtfldSegundoApellidoGestionanteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblCedula2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cedula"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelPrimerNombre2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Primer nombre"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSegundoNombre2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Segundo nombre"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSegundoApellido2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Segundo apellido"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelPrimerApellido2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Primer apellido"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSeparator4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSeparator5">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory19">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory20">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory21">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory22">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtfldCedulaGestionante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtfldCedulaGestionanteKeyPressed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="panelSeleccionarAcompa&#xf1;antes">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder title="Acompa&#xf1;antes"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btnAgregarTestigoGestionante" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnAgregarRepresentanteGestionante" alignment="1" pref="321" max="32767" attributes="0"/>
+                                  <Component id="btnAgregarAcompañanteGestionante" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnAgregarAcompañanteGestionante" min="-2" pref="31" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnAgregarRepresentanteGestionante" min="-2" pref="31" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnAgregarTestigoGestionante" min="-2" pref="31" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="btnAgregarTestigoGestionante">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Agregar Testigo"/>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Cursor de Mano"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAgregarTestigoGestionanteMouseEntered"/>
+                        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAgregarTestigoGestionanteMouseExited"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAgregarTestigoGestionanteActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="btnAgregarAcompa&#xf1;anteGestionante">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Agregar Acompa&#xf1;ante"/>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Cursor de Mano"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAgregarAcompa&#xf1;anteGestionanteMouseEntered"/>
+                        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAgregarAcompa&#xf1;anteGestionanteMouseExited"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAgregarAcompa&#xf1;anteGestionanteActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="btnAgregarRepresentanteGestionante">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Agregar Representante"/>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Cursor de Mano"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAgregarRepresentanteGestionanteMouseEntered"/>
+                        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAgregarRepresentanteGestionanteMouseExited"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAgregarRepresentanteGestionanteActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="labelMandatory41">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="33" green="33" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="*"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblCedula3">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Tipo de identificacion"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cmbTipoIdentificacionGestionante">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Seleccione la identificaci&#xf3;n..."/>
+                        <StringItem index="1" value="Persona f&#xed;sica"/>
+                        <StringItem index="2" value="Persona jur&#xed;dica"/>
+                        <StringItem index="3" value="Dim&#xe1;x o cedula residencial"/>
+                      </StringArray>
+                    </Property>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Cursor de Mano"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbTipoIdentificacionGestionanteActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Container class="javax.swing.JPanel" name="panelDatosGestionante1">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder justification="1" position="2" title="Persona Juridica">
+                          <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder justification="1" position="2" title="Datos personales"/>
+                          </Border>
+                        </TitledBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtfldRazonSocialGestionante" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lblCedula10" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory54" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                  <Component id="txtfldCedulaJuridicaGestionante" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="labelPrimerNombre7" alignment="0" max="32767" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory55" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="0" pref="173" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblCedula10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory54" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtfldCedulaJuridicaGestionante" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelPrimerNombre7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory55" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtfldRazonSocialGestionante" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JFormattedTextField" name="txtfldCedulaJuridicaGestionante">
+                      <Properties>
+                        <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                          <Format format="#-###-######" subtype="-1" type="5"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtfldCedulaJuridicaGestionanteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtfldRazonSocialGestionante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtfldRazonSocialGestionanteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblCedula10">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cedula"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelPrimerNombre7">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Nombre de raz&#xf3;n social"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory54">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory55">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="pnlGestionado">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Gestionado">
+                    <Property name="tabTitle" type="java.lang.String" value="Gestionado"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="panelDatosGestionado" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="lblInstrucciones3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="lblCedula5" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="labelMandatory50" min="-2" pref="13" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="cmbTipoIdentificacionGestionado" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="51" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="panelDatosJuridicosGestionado" max="32767" attributes="0"/>
+                              <Component id="panelSeleccionarAcompañantes2" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblInstrucciones3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblCedula5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelMandatory50" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="cmbTipoIdentificacionGestionado" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="panelDatosGestionado" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="panelDatosJuridicosGestionado" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="panelSeleccionarAcompañantes2" min="-2" pref="139" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="lblInstrucciones3">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ingrese la informacion que se le solicita a continuacion:"/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JPanel" name="panelDatosGestionado">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder justification="1" position="2" title="Persona Fisica"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txtfldPrimerApellidoGestionado" min="-2" pref="107" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelSeparator7" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtfldSegundoApellidoGestionado" min="-2" pref="107" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblCedula4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelMandatory23" min="-2" pref="13" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="labelPrimerApellido3" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory25" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="txtfldPrimerNombreGestionado" min="-2" pref="107" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelSeparator6" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txtfldSegundoNombreGestionado" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                                          <Component id="labelSegundoNombre3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="labelSegundoApellido3" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory26" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="labelPrimerNombre3" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelMandatory24" min="-2" pref="13" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="txtfldCedulaGestionado" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblCedula4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory23" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtfldCedulaGestionado" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelPrimerNombre3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSegundoNombre3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory24" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtfldSegundoNombreGestionado" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtfldPrimerNombreGestionado" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSeparator6" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelPrimerApellido3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSegundoApellido3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory25" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory26" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                      <Component id="txtfldPrimerApellidoGestionado" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="txtfldSegundoApellidoGestionado" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelSeparator7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextField" name="txtfldPrimerNombreGestionado">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtfldPrimerNombreGestionadoKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtfldSegundoNombreGestionado">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtfldSegundoNombreGestionadoKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtfldPrimerApellidoGestionado">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtfldPrimerApellidoGestionadoKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtfldSegundoApellidoGestionado">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtfldSegundoApellidoGestionadoKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblCedula4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cedula"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelPrimerNombre3">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Primer nombre"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSegundoNombre3">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Segundo nombre"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSegundoApellido3">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Segundo apellido"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelPrimerApellido3">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Primer apellido"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSeparator6">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSeparator7">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory23">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory24">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory25">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory26">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtfldCedulaGestionado">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtfldCedulaGestionadoKeyPressed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="lblCedula5">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Tipo de Identificacion"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cmbTipoIdentificacionGestionado">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Seleccione la identificaci&#xf3;n..."/>
+                        <StringItem index="1" value="Persona f&#xed;sica"/>
+                        <StringItem index="2" value="Persona jur&#xed;dica"/>
+                        <StringItem index="3" value="Dim&#xe1;x o cedula residencial"/>
+                      </StringArray>
+                    </Property>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Cursor de Mano"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbTipoIdentificacionGestionadoActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="labelMandatory50">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="33" green="33" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="*"/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JPanel" name="panelDatosJuridicosGestionado">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder justification="1" position="2" title="Persona Juridica">
+                          <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder justification="1" position="2" title="Datos personales"/>
+                          </Border>
+                        </TitledBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtfldRazonSocialGestionado" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lblCedula11" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory56" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                  <Component id="txtfldCedulaJuridicaGestionado" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="labelPrimerNombre8" alignment="0" max="32767" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory57" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="0" pref="173" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblCedula11" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory56" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtfldCedulaJuridicaGestionado" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelPrimerNombre8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory57" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtfldRazonSocialGestionado" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JFormattedTextField" name="txtfldCedulaJuridicaGestionado">
+                      <Properties>
+                        <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                          <Format format="#-###-######" subtype="-1" type="5"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtfldCedulaJuridicaGestionadoKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblCedula11">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cedula"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelPrimerNombre8">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Nombre de razon social"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory56">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory57">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtfldRazonSocialGestionado">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtfldRazonSocialGestionadoKeyPressed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="panelSeleccionarAcompa&#xf1;antes2">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder title="Acompa&#xf1;antes"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btnAgregarTestigoGestionado" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btnAgregarRepresentanteGestionado" alignment="1" pref="321" max="32767" attributes="0"/>
+                                  <Component id="btnAgregarAcompañanteGestionado" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnAgregarAcompañanteGestionado" min="-2" pref="31" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnAgregarRepresentanteGestionado" min="-2" pref="31" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnAgregarTestigoGestionado" min="-2" pref="31" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="btnAgregarTestigoGestionado">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Agregar Testigo"/>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Cursor de Mano"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAgregarTestigoGestionadoMouseEntered"/>
+                        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAgregarTestigoGestionadoMouseExited"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAgregarTestigoGestionadoActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="btnAgregarAcompa&#xf1;anteGestionado">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Agregar Acompa&#xf1;ante"/>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Cursor de Mano"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAgregarAcompa&#xf1;anteGestionadoMouseEntered"/>
+                        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAgregarAcompa&#xf1;anteGestionadoMouseExited"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAgregarAcompa&#xf1;anteGestionadoActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="btnAgregarRepresentanteGestionado">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Agregar Representante"/>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Cursor de Mano"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAgregarRepresentanteGestionadoMouseEntered"/>
+                        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAgregarRepresentanteGestionadoMouseExited"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAgregarRepresentanteGestionadoActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="pnlAcompa&#xf1;ante">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Acompa&#xf1;ante">
+                    <Property name="tabTitle" type="java.lang.String" value="Acompa&#xf1;ante"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="panelDatosAcompañante" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="lblTituloInformativo2" min="-2" pref="305" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="38" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="panelDatosAcompañante1" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblTituloInformativo2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="panelDatosAcompañante" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="panelDatosAcompañante1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="228" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="panelDatosAcompa&#xf1;ante">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder justification="1" position="2" title="Datos personales">
+                          <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder justification="1" position="2" title="Datos personales"/>
+                          </Border>
+                        </TitledBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txtPrimerApellidoAcompañante" min="-2" pref="107" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelSeparator13" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtSegundoApellidoAcompañante" min="-2" pref="107" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblCedula7" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelMandatory31" min="-2" pref="13" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="labelPrimerApellido6" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory33" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="txtPrimerNombreAcompañante" min="-2" pref="107" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelSeparator12" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txtSegundoNombreAcompañante" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                                          <Component id="labelSegundoNombre6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="labelSegundoApellido6" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory34" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="labelPrimerNombre6" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelMandatory32" min="-2" pref="13" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="txtCedulaAcompañante" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblCedula7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory31" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtCedulaAcompañante" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelPrimerNombre6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSegundoNombre6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory32" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtSegundoNombreAcompañante" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtPrimerNombreAcompañante" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSeparator12" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelPrimerApellido6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSegundoApellido6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory33" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory34" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="txtPrimerApellidoAcompañante" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelSeparator13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtSegundoApellidoAcompañante" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextField" name="txtPrimerNombreAcompa&#xf1;ante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtPrimerNombreAcompa&#xf1;anteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtSegundoNombreAcompa&#xf1;ante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSegundoNombreAcompa&#xf1;anteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtPrimerApellidoAcompa&#xf1;ante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtPrimerApellidoAcompa&#xf1;anteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtSegundoApellidoAcompa&#xf1;ante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSegundoApellidoAcompa&#xf1;anteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblCedula7">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cedula"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelPrimerNombre6">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Primer nombre"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSegundoNombre6">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Segundo nombre"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSegundoApellido6">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Segundo apellido"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelPrimerApellido6">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Primer apellido"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSeparator12">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSeparator13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory31">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory32">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory33">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory34">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtCedulaAcompa&#xf1;ante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCedulaAcompa&#xf1;anteKeyPressed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="panelDatosAcompa&#xf1;ante1">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder justification="1" position="2" title="Otros datos"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtCondicionAcompañante" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lblCedula8" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory39" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory40" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="cmbTipoAcompañante" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="0" pref="120" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblCedula8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory39" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cmbTipoAcompañante" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel28" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory40" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtCondicionAcompañante" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JComboBox" name="cmbTipoAcompa&#xf1;ante">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="5">
+                            <StringItem index="0" value="Seleccione un tipo de persona..."/>
+                            <StringItem index="1" value="Abogado (a)"/>
+                            <StringItem index="2" value="Responsable (Menor Edad)"/>
+                            <StringItem index="3" value="Sindicalista"/>
+                            <StringItem index="4" value="Otro"/>
+                          </StringArray>
+                        </Property>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Cursor de Mano"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbTipoAcompa&#xf1;anteActionPerformed"/>
+                      </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtCondicionAcompa&#xf1;ante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCondicionAcompa&#xf1;anteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblCedula8">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tipo de persona"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel28">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="En condici&#xf3;n de:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory39">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory40">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="lblTituloInformativo2">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ingrese la informaci&#xf3;n que se le solicita a continuaci&#xf3;n:"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="pnlRepresentante">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Representante">
+                    <Property name="tabTitle" type="java.lang.String" value="Representante"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="lblTituloInformativo3" min="-2" pref="305" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="38" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="panelDatosRepresentante" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblTituloInformativo3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="panelDatosRepresentante" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="363" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="panelDatosRepresentante">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder justification="1" position="2" title="Datos personales">
+                          <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder justification="1" position="2" title="Datos personales"/>
+                          </Border>
+                        </TitledBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txtPrimerApellidoRepresentante" min="-2" pref="107" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelSeparator11" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtSegundoApellidoRepresentante" min="-2" pref="107" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblCedula9" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelMandatory35" min="-2" pref="13" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="labelPrimerApellido5" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory37" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="txtPrimerNombreRepresentante" min="-2" pref="107" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelSeparator10" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txtSegundoNombreRepresentante" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                                          <Component id="labelSegundoNombre5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="labelSegundoApellido5" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory38" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="labelPrimerNombre5" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="labelMandatory36" min="-2" pref="13" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="txtCedulaRepresentante" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblCedula9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory35" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtCedulaRepresentante" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelPrimerNombre5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSegundoNombre5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory36" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtSegundoNombreRepresentante" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtPrimerNombreRepresentante" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSeparator10" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelPrimerApellido5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSegundoApellido5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory37" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory38" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="txtPrimerApellidoRepresentante" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelSeparator11" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtSegundoApellidoRepresentante" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextField" name="txtPrimerNombreRepresentante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtPrimerNombreRepresentanteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtSegundoNombreRepresentante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSegundoNombreRepresentanteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtPrimerApellidoRepresentante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtPrimerApellidoRepresentanteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtSegundoApellidoRepresentante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSegundoApellidoRepresentanteKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblCedula9">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cedula"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelPrimerNombre5">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Primer nombre"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSegundoNombre5">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Segundo nombre"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSegundoApellido5">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Segundo apellido"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelPrimerApellido5">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Primer apellido"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSeparator10">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSeparator11">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory35">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory36">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory37">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory38">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtCedulaRepresentante">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCedulaRepresentanteKeyPressed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="lblTituloInformativo3">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ingrese la informaci&#xf3;n que se le solicita a continuaci&#xf3;n:"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="pnlTestigo">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Testigo">
+                    <Property name="tabTitle" type="java.lang.String" value="Testigo"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="panelDatosTestigo" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="lblTituloInformativo4" min="-2" pref="305" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="38" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblTituloInformativo4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="panelDatosTestigo" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="363" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="panelDatosTestigo">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder justification="1" position="2" title="Datos personales">
+                          <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder justification="1" position="2" title="Datos personales"/>
+                          </Border>
+                        </TitledBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lblCedula6" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelMandatory27" min="-2" pref="13" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="labelPrimerApellido4" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="labelMandatory29" min="-2" pref="13" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="txtPrimerNombreTestigo" min="-2" pref="107" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="labelSeparator8" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="labelPrimerNombre4" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="labelMandatory28" min="-2" pref="13" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="labelSegundoNombre4" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="txtSegundoNombreTestigo" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="labelSegundoApellido4" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="labelMandatory30" min="-2" pref="13" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace pref="87" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="txtPrimerApellidoTestigo" min="-2" pref="107" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="labelSeparator9" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="txtSegundoApellidoTestigo" min="-2" pref="107" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="txtCedulaTestigo" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblCedula6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory27" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtCedulaTestigo" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelPrimerNombre4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory28" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSegundoNombre4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtSegundoNombreTestigo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtPrimerNombreTestigo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSeparator8" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelPrimerApellido4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelSegundoApellido4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory29" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelMandatory30" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="txtPrimerApellidoTestigo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelSeparator9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtSegundoApellidoTestigo" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextField" name="txtPrimerNombreTestigo">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtPrimerNombreTestigoKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtSegundoNombreTestigo">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSegundoNombreTestigoKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtPrimerApellidoTestigo">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtPrimerApellidoTestigoKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtSegundoApellidoTestigo">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSegundoApellidoTestigoKeyPressed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblCedula6">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cedula"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelPrimerNombre4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Primer nombre"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSegundoNombre4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Segundo nombre"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSegundoApellido4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Segundo apellido"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelPrimerApellido4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Primer apellido"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSeparator8">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelSeparator9">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="-"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory27">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory28">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory29">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelMandatory30">
+                      <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="33" green="33" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="*"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="txtCedulaTestigo">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCedulaTestigoKeyPressed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="lblTituloInformativo4">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ingrese la informaci&#xf3;n que se le solicita a continuaci&#xf3;n:"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="btnGuardar">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Guardar"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Cursor de Mano"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnGuardarMouseEntered"/>
+            <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnGuardarMouseExited"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
